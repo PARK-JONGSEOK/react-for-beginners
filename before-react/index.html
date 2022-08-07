@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Before React</title>
-</head>
-<body>
+  </head>
+  <body>
     <span>Total clicks: 0</span>
     <button id="btn">Click me</button>
-</body>
-<script>
-  let counter = 0;
-  const button = document.getElementById("btn");
-  const span = document.querySelector("span");
+  </body>
+  <script>
+    let counter = 0;
+    const button = document.getElementById("btn");
+    const span = document.querySelector("span");
 
-  function handelClick() {
-    counter = counter + 1;
-    span.innerText = `Total clicks: ${counter}`;
-  }
+    function handelClick() {
+      counter = counter + 1;
+      span.innerText = `Total clicks: ${counter}`;
+    }
 
-  button.addEventListener("click", handelClick);
-</script>
+    button.addEventListener("click", handelClick);
+  </script>
 </html>
